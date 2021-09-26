@@ -43,7 +43,7 @@ public class tgServlet_productos extends HttpServlet {
 		Part archivo = request.getPart("archivo");
 		String filename =archivo.getSubmittedFileName();
 		InputStream is = archivo.getInputStream();
-		File f = new File("C:\\Users\\SuperUs\\Desktop\\Clases Virtuales\\Tienda-Generica-Ciclo3MinTic\\tiendagenerica\\src\\main\\webapp\\files\\"+nombre);
+		File f = new File("\\Tienda-Generica-Ciclo3MinTic\\tiendagenerica\\src\\main\\webapp\\files\\"+nombre);
 		FileOutputStream ous = new FileOutputStream(f);
 		int dato = is.read();
 			while(dato !=-1) {
