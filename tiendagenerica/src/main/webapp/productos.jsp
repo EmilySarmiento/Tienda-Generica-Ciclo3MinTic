@@ -45,11 +45,10 @@
                     <label for="formFile" class="form-label mt-4">Nombre del Archivo</label>
                    
                     <input class="form-control" name="archivo" type="file" id="formFile" onchange="cargarArchivo(this)">
-                    <button class="btn btn-success mt-3" name="proceso" value="Procesar" type="button" id="btnSubir" disabled >Cargar</button>
+                    <button class="btn btn-success mt-3" name="proceso" value="Procesar" type="submit" id="btnSubir" disabled >Cargar</button>
                 </div>
                <input type="hidden" name="nombre" value=""/>
         </form>
         <iframe name="null" style="display:non;"></iframe><!-- mensajes-->
-        <p style="color:${color}">${mensaje}</p>
         </div>
     </div>
