@@ -7,9 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Reportes</title>
     <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
-    <script src="js/productos.js"></script>
 </head>
 
 <body>
@@ -27,28 +26,25 @@
                     <a class="nav-link" href="proveedores.jsp">Proveedores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="productos.jsp">Productos</a>
+                    <a class="nav-link " href="productos.jsp">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ventas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="reportes.jsp">Reportes</a>
+                    <a class="nav-link active" href="reportes.jsp">Reportes</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="row align-items-center mt-4 text-center justify-content-center">
-        <form name="formulario" class="col-lg-7" action="tgServlet_productos?accion=add" method="POST" enctype="multipart/form-data">
-           		<div class="form-group">
-                    <label for="formFile" class="form-label mt-4">Nombre del Archivo</label>
-                   
-                    <input class="form-control" name="archivo" type="file" id="formFile" onchange="cargarArchivo(this)">
-                    <button class="btn btn-success mt-3" name="proceso" value="Procesar" type="submit" id="btnSubir" disabled >Cargar</button>
-                </div>
-               <input type="hidden" name="nombre" value=""/>
-        </form>
+	        	<div class="d-grid gap-2">
+	        		<a href="listadoUsuarios.jsp" class="btn btn-lg btn-primary" role="button" aria-pressed="true">Listado de usuarios</a>
+				  	<a href="listadoClientes.jsp" class="btn btn-lg btn-primary" role="button" aria-pressed="true">Listado de clientes</a>
+				  	<a href="ventasCliente.jsp" class="btn btn-lg btn-primary" role="button" aria-pressed="true">Ventas por cliente</a>
+				 </div>
+        			
         <iframe name="null" style="display:non;"></iframe><!-- mensajes-->
         </div>
     </div>
